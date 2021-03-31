@@ -146,6 +146,8 @@ public class MyScript {
 		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[4]/button/span\r\n" + "")).click();
 
 		System.out.println("Automation test completes successfully");
+
+		System.out.println("test");
 		
 		
 	}
