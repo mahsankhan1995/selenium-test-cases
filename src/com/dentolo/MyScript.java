@@ -67,10 +67,10 @@ public class MyScript {
 		driver.findElement(By.id("last_name")).sendKeys("last");
 		
 		//for button "Weiter"
-		//Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
 
 //------------- Page 3 of 6 "Angaben zum Versicherungsnehmer" -----------------------------------------------------------------------------------------------------------------
+		
 		// perform Double click action on "Anrede" redio button, because single click is not working for "Herr" 
 		Thread.sleep(3000);
 		Actions act = new Actions(driver);{
@@ -121,20 +121,19 @@ public class MyScript {
 		driver.findElement(By.xpath("//*[@id=\"insured_postalcode_city\" and @placeholder='Sonnenstadt']\r\n" + "")).sendKeys("sun city");
 
 		
-		//driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[15]/button/span\r\n" + "")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[15]/button/span\r\n" + "")).click();
 
 		
 //------------- Page 4 of 6 "Zahlungsdaten" -----------------------------------------------------------------------------------------------------------------
-		//Thread.sleep(3000);
+
 		driver.findElement(By.id("iban")).sendKeys("DE89 3704 0044 0532 0130 00");
 		
-		//driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[6]/button/span\r\n" + "")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[6]/button/span\r\n" + "")).click();
 
 		
 //------------- Page 5 of 6 "Ausgewählter Versicherungsschutz" -----------------------------------------------------------------------------------------------------------------
-		//Thread.sleep(3000);
+		
 		driver.findElement(By.id("documents_accepted_at")).click();
-		//Thread.sleep(3000);
 		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[4]/div[1]/div[2]/div/div/div/div/div[5]/button/span\r\n" + "")).click();
 		driver.findElement(By.name("e_mail")).click();
 		driver.findElement(By.name("telephone")).click();
@@ -142,12 +141,10 @@ public class MyScript {
 		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
 
 //------------- Page 6 of 6 "Versicherungsschutz" -----------------------------------------------------------------------------------------------------------------
-		//Thread.sleep(3000);
+
 		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[4]/button/span\r\n" + "")).click();
 
 		System.out.println("Automation test completes successfully");
-
-		System.out.println("test");
 		
 		
 	}
