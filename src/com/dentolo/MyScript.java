@@ -79,8 +79,8 @@ public class MyScript {
 		}
 		
 		//Enter first and last name
-		driver.findElement(By.id("first_name")).sendKeys("first");
-		driver.findElement(By.id("last_name")).sendKeys("last");
+		driver.findElement(By.id("first_name")).sendKeys("Your_first_name");
+		driver.findElement(By.id("last_name")).sendKeys("Your_last_name");
 		
 		//for selection of Date
 		WebElement elementDate2 =  driver.findElement(By.name("day"));{
@@ -98,7 +98,7 @@ public class MyScript {
 		sel.selectByVisibleText("1995");
 		}
 		
-		driver.findElement(By.id("email")).sendKeys("example@gmail.com");
+		driver.findElement(By.id("email")).sendKeys("Please_enter_your_email@example.com");
 		
 		driver.findElement(By.id("phone_number")).sendKeys("17612345678");
 		
@@ -114,7 +114,7 @@ public class MyScript {
 		
 		driver.findElement(By.id("insured_street_name")).sendKeys("ssonnenStrasse");
 		
-		driver.findElement(By.name("house-number-insured")).sendKeys("5");
+		driver.findElement(By.name("house-number-insured")).sendKeys("6");
 		
 		driver.findElement(By.id("insured_postalcode_city")).sendKeys("12345");
 		
@@ -138,7 +138,7 @@ public class MyScript {
 		driver.findElement(By.name("e_mail")).click();
 		driver.findElement(By.name("telephone")).click();
 
-		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
+		//driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
 
 //------------- Page 6 of 6 "Versicherungsschutz" -----------------------------------------------------------------------------------------------------------------
 
