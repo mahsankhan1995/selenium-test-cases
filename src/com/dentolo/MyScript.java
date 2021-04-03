@@ -16,6 +16,12 @@ public class MyScript {
 
 	public static void main(String[] args) throws InterruptedException {
 
+//------------- This code will run an  automated test on a Website, fill all the required fields -----------------------------------------------------------------------------------------------------------------
+//------------- and go to every steps and visit the last success page ---------------------------------
+//------------- (also will ignore all the bug on a website) ---------------------------------------------		
+		
+		
+
 		System.setProperty("webdriver.chrome.driver","C:\\selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -138,7 +144,7 @@ public class MyScript {
 		driver.findElement(By.name("e_mail")).click();
 		driver.findElement(By.name("telephone")).click();
 
-		//driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
+		driver.findElement(By.xpath("/html/body/div[2]/div/main/div/div/div/div/div/form/div/div[7]/button/span\r\n" + "")).click();
 
 //------------- Page 6 of 6 "Versicherungsschutz" -----------------------------------------------------------------------------------------------------------------
 
